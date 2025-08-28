@@ -1,0 +1,1 @@
+const { containers }=require('../utils.js');module.exports=async function(context,req){const {videos}=await containers();const q=await videos.items.query({query:'SELECT TOP 24 c.id, c.title, c.genre, c.ageRating, c.publisher, c.createdAt FROM c ORDER BY c.createdAt DESC'}).fetchAll();context.res={headers:{'Content-Type':'application/json'},body:q.resources}}

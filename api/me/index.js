@@ -1,0 +1,1 @@
+const { verify }=require('../utils.js');module.exports=async function(context,req){const c=verify(req);context.res={body:c?{authenticated:true,user:{id:c.sub,email:c.email,role:c.role}}:{authenticated:false}}}
