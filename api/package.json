@@ -8,7 +8,7 @@
   "dependencies": {
     "@azure/cosmos": "^4.0.0",
     "@azure/storage-blob": "^12.17.0",
-    "@azure/ai-text-analytics": "^6.0.0",
+    "@azure/ai-text-analytics": "^5.0.0",
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2",
     "uuid": "^9.0.1"
